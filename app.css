@@ -1,0 +1,259 @@
+/* 
+
+-------------------Typography---------------
+Font Sizes 
+   12px / 16px / 20px / 24px / 32px / 40px / 48px / 62px /
+<small>/ <a>  / <p>  / <h5> / <h4> / <h3> / <h2> / <h1> /
+
+Font Weights
+
+400 / 700
+
+Line Hieghts
+1.2 / 1.5
+
+Letter Spacing 
+0 / -2x
+
+Font Family
+poppins
+
+--------------------colors-----------------
+    
+
+Primary
+
+
+Secondary
+
+
+Tertiary
+
+
+Grey
+
+
+-------------------------Border Radius--------------------
+
+4px / 8px / 20px
+
+
+----------------------Spacing Systems--------------------
+
+5 / 10 / 25 / 50 / 100
+5-30/30-100/ 100-150/150-300/300-400
+
+*/
+
+/* ---------------------------Global Styles---------------------  */
+:root{
+
+    /* Font Sizes */
+    --text-sm:1.2rem;
+    --text-base:1.6rem;
+    --text-paragraph:1.5rem;
+    --text-h5:2.4rem;
+    --text-h4:3.2rem;
+    --text-h3:4.0rem;
+    --text-h2:4.8rem;
+    --text-h1:6.2rem;
+
+    /* Font weight */
+    --font-weight-normal:400;
+    --font-weight-bold:700;
+
+    /* Line Hieght */
+    --line-height-tight:1.2;
+    --line-height-normal:1.5;
+
+    /* Letter Spacing */
+    --letter-spacing-tight:-2px;
+
+    /* font type and family */
+    --font-family:'Poppins', sans-serif;
+
+    /* colors */
+    --primary-base:#339af0;
+    --primary-tint:#d0ebff;
+    --primary-shade:#1c7ed6;
+
+    --secondary-base:#9775fa;
+    --secondary-tint:#e5dbff;
+    --secondary-shade:#7048e8;
+
+    --tertiary-base:#ff922b;
+    --tertiary-tint:#ffe8cc ;
+    --tertiary-shade:#f76707 ;
+
+    --grey-base:#495057 ;
+    --grey-tint:#f1f3f5;
+    --grey-shade:#212529;
+
+    --white:#ffffff;
+
+    /* Miscelleneous */
+    --nav-height:100px;
+
+    /* border radius */
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 20px;
+
+    /* Spacing system */
+    --space-5: 0.5rem;
+    --space-10: 1rem;
+    --space-25: 2.5rem;
+    --space-50: 5rem;
+    --space-100: 10rem;
+
+
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: var(--font-family);
+    font-weight: var(--font-weight-normal);
+    line-height: var(--line-height-tight);
+    color: #212529;
+    font-weight: var(--font-weight-normal);
+
+    margin: 0;
+    padding: 0;
+}
+
+h1,h2,h3,h4,h5{
+    font-weight: var(--font-weight-bold);
+    line-height: var(--line-height-tight);
+    /* letter-spacing: -2px; */
+    color: var(--grey-shade);
+
+}
+h1{
+    
+    font-size: var(--text-h1);
+}
+
+h2{
+    font-size: var(--text-h2);
+}
+
+h3{
+    font-size: var(--text-h3);
+}
+
+h4{
+    font-size: var(--text-h4);
+}
+
+h5{
+    font-size: var(--text-h5);
+}
+
+p{
+    font-size: var(--text-paragraph);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.nav-container{
+    padding: 0px var(--space-50) 0px var(--space-50);
+    min-height: 8rem;
+    
+}
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.nav-bar ul,button{
+    list-style: none;
+    display: flex;
+    gap: 4rem;
+    font-size: 2rem;
+}
+.nav-list a{
+    text-decoration: none;
+    color: black;
+    
+}
+.nav-btn{
+    background: none;
+    border: none;
+    background-color: #f76707;
+    border-radius: 10%;
+    padding: 0.7rem 1.5rem 0.7rem 1.5rem;
+    font-weight: bold;
+    
+}
+
+
+.container {
+    min-height: calc(100vh - 8rem);
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+    padding: 0px var(--space-50) 0px var(--space-50);
+
+}
+/* .hero{
+    line-height: 1.1;
+    width: 50rem;
+} */
+
+.hero {
+  /* line-height: 1.1; */
+  width: 100%;
+  max-width: 60rem; /* 800px */ /* center it horizontally */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ 
+}
+.hero p{
+    font-family: 'Roboto Mono', monospace;
+    letter-spacing: 0.2rem;
+}
+.hero-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-img img{
+    height: 50rem;
+}
+
+.break-line {
+  display: block;
+  margin-top: 0.25rem;
+}
+
+
+.container h5,
+.container h4,
+.container h3 {
+    margin-top: 0;
+    margin-bottom: 0.4rem;
+    line-height:1.1;
+}
+
+.logo h1{
+    font-size: 25px;
+}
+
+
